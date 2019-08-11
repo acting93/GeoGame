@@ -6,7 +6,6 @@ $(window).resize(function(){
    $('p').css({fontSize:"10px"});
    $('header').css({height:"100px",borderRadius:"0"})
    $('li').css({width:"100%",display:"block",marginLeft:"0px",marginBottom:"5px",fontSize:"10px" })     
-   $(copyright).css({marginTop:"5px"});
    $(logo).css({position:"relative",margin:"0 auto",width:"60px",height:"60px"});
    $(socials).hide();     
    $(socials2).show();
@@ -28,8 +27,7 @@ $(window).resize(function(){
      $(geogame).hide();
      $(socials).hide();
      $(socials2).show();
-     $(copyright).css({marginTop:"5px"});
-     
+       
  }
  else{
      $('div').removeAttr('style');
@@ -43,8 +41,10 @@ $(window).resize(function(){
      $(imgfooter).removeAttr('style');
      $(socials2).removeAttr('style');
      $(follow).removeAttr('style');
-     $(copyright).removeAttr('style');
      $(logo).removeAttr('style');
      $(geogame).show();
  }    
 });    
+$('li,i').click(function(){
+    alert("page in preparation, check 'Capitals'")
+});
