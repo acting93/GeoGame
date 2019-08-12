@@ -176,7 +176,9 @@ const answerDiv = document.getElementsByClassName("answers")
         currentCapitals++
          };
 nextAnswer()
-
+    let resetColor =()=>{
+        $('.answers').css({backgroundColor:"#060b33"});
+    }
     $(document).ready(function(){
         $('.answers').on("click",function(){
           if(correctAnswers.includes($(this).text())){
@@ -187,6 +189,7 @@ nextAnswer()
             $(this).css({backgroundColor:"red"})
             }
           setTimeout(function(){
+          resetColor()    
           nextQuestion()
           nextAnswer() 
         },800);
