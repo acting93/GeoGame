@@ -4,8 +4,7 @@ $(window).resize(function(){
    $('h4').css({fontSize:"10px"});     
    $('h2').css({fontSize:"12px"});     
    $('p').css({fontSize:"10px"});
-   $('header').css({height:"100px",borderRadius:"0"})
-   $('li').css({width:"100%",display:"block",marginLeft:"0px",marginBottom:"5px",fontSize:"10px" })     
+   $('header').css({height:"100px",borderRadius:"0"});
    $(logo).css({position:"relative",margin:"0 auto",width:"60px",height:"60px"});
    $(socials).hide();     
    $(socials2).show();
@@ -15,8 +14,7 @@ $(window).resize(function(){
  }   
  else if($(window).width() < 500){
      $('div').removeAttr('style');
-     $('ul').css({marginLeft:"0px",padding:"0px"})
-     $('li').css({width:"100%",display:"block",marginLeft:"0px",marginBottom:"5px",fontSize:"15px" })
+     $('ul').css({marginLeft:"0px",padding:"0px"});
      $('h4').css({fontSize:"15px"});     
      $('h4').css({fontSize:"20px"});     
      $('p').css({fontSize:"15px"});
@@ -33,7 +31,6 @@ $(window).resize(function(){
      $('div').removeAttr('style');
      $('section').removeAttr('style');
      $('ul').removeAttr('style');
-     $('li').removeAttr('style');
      $('h4').removeAttr('style');  
      $('p').removeAttr('style');
      $('header').removeAttr('style');
