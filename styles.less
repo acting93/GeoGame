@@ -1,5 +1,5 @@
-@bodyColor: (to top, #ffffff,#0080ff, #ffffff);
-@headerColor: linear-gradient(to bottom,white,#0080ff) ;
+@bodyColor: linear-gradient(to top, #ffffff,#0080ff, #ffffff);
+@headerColor: linear-gradient(to top,white,#0080ff) ;
 @divColor:#280a7b;
 @margin: 0 auto;
 @radius: 40px 90px 0px 90px;
@@ -21,14 +21,14 @@ header{
     background-image: @headerColor;
     height: 120px;
     color:white;
-    text-align:center;
+	text-align:center;
     line-height: @lineHeight;
     position: relative;
     border-radius:0px 20px;
     box-shadow: @boxShadow2;
     z-index: 300;
     display: inline-block;
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid #ffffff;
     font-weight: 200;
     
         img{
@@ -74,27 +74,24 @@ header{
   padding: 10px;
 }
 .col-xl-10{
-    box-shadow: 0px -20px 50px blue;
     background-image: linear-gradient(to bottom, white, white, #a9a9e6, blue);
     color:@fontColor;
     height: auto;
     justify-content: center;
     text-align: center;
-    border-radius:none;
     margin-top: 20px;
     margin-left:auto;
     margin-right:auto;
     z-index: 600;
-    padding: 30px;
+    padding: 20px;
     border: 2px white solid;
         #title{
             font-size: 35px;
-            color:#fcfcfc;
+            color:@fontColor;
             text-align: center;
             text-decoration: none;
             font-weight: 400;
         }
-    
         div{
             font-size: 16px;
             margin-top: 10px;
@@ -112,16 +109,17 @@ header{
         img{
            border-radius: @radius;
            box-shadow: @boxShadow;
-	}
-	#learning{
-          color:@fontColor;
-          font-size: 25px;
-          text-align: center;
         }
+        #learning{
+            color:@fontColor;
+            font-size: 25px;
+            text-align: center;
+        }    
         ul{
+           width: 100%;    
            list-style-type: none;
-           left:0px;
-            display: inline-block;
+           
+           background-color: none;
             }
          li{
             width: 200px;
@@ -160,8 +158,8 @@ div:hover{
     color:#120606;
 }
     
-    p{color:#010112;
-        text-align: left;
+    p{color:#030608;
+      text-align: left;
       font-size: 18px;   
     }
     #text{
@@ -187,7 +185,7 @@ footer{
         margin-right: auto;
     }
     p{   
-        color:#0080ff;
+        color:#ffffff;
         margin-top: 5px;
     }
 }
