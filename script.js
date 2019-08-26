@@ -43,5 +43,5 @@ $(window).resize(function(){
  }    
 });    
 $('li,i').click(function(){
-    alert("page in preparation, check 'Capitals'")
+    alert("page in preparation, check 'Capitals' or 'Peaks' ")
 });
