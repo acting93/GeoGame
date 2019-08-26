@@ -1,0 +1,261 @@
+@font:'Kanit', sans-serif; 
+@font2:'Righteous', cursive;
+body{
+    font-family: @font;
+    background-image: linear-gradient(to bottom,#170303,#0073e6,white,white);
+    -webkit-background-image: linear-gradient(to bottom,#170303,#0073e6,white,white);
+    -moz-background-image: linear-gradient(to bottom,#170303,#0073e6,white,white);
+    -ms-background-image: linear-gradient(to bottom,#170303,#0073e6,white,white);
+    -o-background-image: linear-gradient(to bottom,#170303,#0073e6,white,white);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+header{
+    background-image:linear-gradient(to bottom,#170303,#0073e6,white,white,white);
+    -webkit-background-image:linear-gradient(to bottom,#170303,#0073e6,white,white,white);
+    -moz-background-image:linear-gradient(to bottom,#170303,#0073e6,white,white,white);
+    -ms-background-image:linear-gradient(to bottom,#170303,#0073e6,white,white,white);
+    -o-background-image:linear-gradient(to bottom,#170303,#0073e6,white,white,white);
+    height:100px;
+    box-shadow: 0px 20px 30px black;
+    -webkit-box-shadow: 0px 20px 30px black;
+    -moz-box-shadow: 0px 20px 30px black;
+    -ms-box-shadow: 0px 20px 30px black;
+    -o-box-shadow: 0px 20px 30px black;
+    display: inline-block;
+    font-family: @font2;
+    #geogame{
+    margin-left: 10%;    
+    width:120px;
+    height:100px;
+    top: 15px;
+    float: left;
+    }
+    #nameofgame{
+    float: left;
+    font-size: 45px;
+    margin:30px auto;
+    font-weight: 500;
+    color:#0083e3;
+    }
+}
+#nameofgame2{
+    text-align: center;
+    font-size: 18px;
+    color:white;
+    background: #0083e3;
+    display: none;
+}
+.col-xl-10{
+    margin: 40px auto;
+    background-color: none;
+    height:600px;
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: block;
+}
+#nameEnter{
+    background-color: #ffffff;
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+    border: 2px solid #0083e3;
+    
+       p{
+    font-size: 35px;
+    top:30px;
+    color: #0083e3;
+    }
+      input{
+    width: 200px;
+    height: 45px;
+    position: relative;
+    transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -ms-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    outline: none;     
+    top:10px;
+    border: 1px solid black;
+    text-align: center;
+    }
+      #btnName{
+    top:10px;
+    width: 120px;
+    height: 45px;
+    position: relative;      
+    background-color: #0083e3;
+    color:white;
+    transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -ms-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    font-size: 18px;
+    }
+}
+#namePlayer{
+    position: relative;
+    height: 150px;
+    color: white;
+    text-align: center;
+    background:none;
+    color:#ffffff;
+    display: none;
+    border-bottom: 2px solid #000000;
+    box-shadow: 0px 10px 20px black;
+    -webkit-box-shadow: 0px 10px 20px black;
+    -moz-box-shadow: 0px 10px 20px black;
+    -ms-box-shadow: 0px 10px 20px black;
+    -o-box-shadow: 0px 10px 20px black;
+    font-family: @font2;
+    float:left;
+    #nameP{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    #pointsP{
+        font-size: 30px;
+    }
+}
+#countQuestion{
+   color:#b4d400;
+   height: 150px;
+   text-align: center;
+   border-bottom: 2px solid #000000;    
+   box-shadow: 0px 10px 20px black;
+   -webkit-box-shadow: 0px 10px 20px black;
+   -moz-box-shadow: 0px 10px 20px black;
+   -ms-box-shadow: 0px 10px 20px black;
+   -o-box-shadow: 0px 10px 20px black;
+   display: none;
+   float: left;
+    #questionP{
+       font-size: 30px;
+       margin-top: 50px;
+       font-family: @font2;
+    }
+}
+#questionsBox{
+    position: relative;
+    height: auto;
+    display: none;
+    background:#4e0080;
+    border-bottom: 2px solid #000000;
+    border: 2px solid #ffff00;
+    color:#c9e300;
+    font-size: 35px;
+    padding: 10px;
+    text-align: center;
+    float: left;
+    .questions{
+        display: none;
+    }
+    .image{
+        position: relative;
+        width:500px;
+        height:auto;
+        }
+}
+#answersBox{
+    position: relative;
+    height: auto;
+    background-color:#ffffff;
+    text-align: center;
+    display: none;
+    padding: 30px;
+    float: left;
+    #question{
+        width:100%;
+        height: 200px;
+        background-color: aliceblue;
+    }    
+}
+.answersDiv{
+    width:35%;
+    height:60px;
+    position: relative;
+    background:#040472;
+    transform: skew(-8deg);
+    -webkit-transform: skew(-8deg);
+    -moz-transform: skew(-8deg);
+    -ms-transform: skew(-8deg);
+    -o-transform: skew(-8deg);
+    top: 40%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 10px;
+    outline: none;
+    border: 2px solid white;
+    box-shadow: 0px 10px 5px #000000;
+    -webkit-box-shadow: 0px 10px 5px #000000;
+    -moz-box-shadow: 0px 10px 5px #000000;
+    -ms-box-shadow: 0px 10px 5px #000000;
+    -o-box-shadow: 0px 10px 5px #000000;
+    line-height: 60px;
+    color:white;
+    font-size: 25px;
+    cursor: pointer;    
+}    
+footer{
+    height:100px;
+    text-align: center;
+    bottom:0%;
+    background-image: linear-gradient(to top,#170303,white,white,#0073e6);
+    img{
+      width: 100px;
+      height:100px;    
+    }
+}
+#theEnd{
+    height:auto;
+    color:#fdf5ff;
+    background-image: linear-gradient(to bottom,#5a0202,#5a0202,#220101);
+    -webkit-background-image: linear-gradient(to bottom,#5a0202,#5a0202,#220101);
+    -moz-background-image: linear-gradient(to bottom,#5a0202,#5a0202,#220101);
+    -ms-background-image: linear-gradient(to bottom,#5a0202,#5a0202,#220101);
+    -o-background-image: linear-gradient(to bottom,#5a0202,#5a0202,#220101);
+    font-size: 35px;
+    padding: 0px;
+    display: none;
+    font-family: @font2;
+}
+.col-md-6{
+    height:100%;
+    background-color: none;
+    margin: 0 auto;
+    float: left;
+    text-align: center;
+    position:relative;
+    padding: 2px;
+    
+    p{
+        font-size: 30px;
+        
+    }
+    button{
+        color:#ffffff;
+        background-image: linear-gradient(to right,#62009f,#5a0202,#220101);
+        width: 150px;
+        height: 50px;
+        transform: skew(-8deg);
+        -webkit-transform: skew(-8deg);
+        -moz-transform: skew(-8deg);
+        -ms-transform: skew(-8deg);
+        -o-transform: skew(-8deg);
+        border: 2px solid #003bff;
+        padding: 5px;
+        font-size: 15px;
+        font-family: @font;
+    }
+    #score{
+        color:yellow;
+    }
+}
