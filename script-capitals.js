@@ -119,11 +119,11 @@ const answerDiv = document.getElementsByClassName("answers")
         point.innerHTML = `Points: ${current}`;
     };
     let colorOfScore =()=>{
-        if(current <= 3){
+        if(current <= 15){
             $('header').css({backgroundColor:"#fc1515"})
             informations.innerHTML = "uuuu better don't look at the screen and take a map to your hand...."
         }
-        else if(current <= 8){
+        else if(current <= 21){
             $('header').css({backgroundColor:"#ffd800"})
             informations.innerHTML = "Quite okay but you exactly know that could be better....so open the map and learn"
         }
