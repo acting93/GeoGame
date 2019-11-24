@@ -1,157 +1,164 @@
 <!DOCTYPE>
 <html lang="en">
-    <head>
-       <meta charset="utf-8">
-       <meta name="description" content="FLAGS">
-       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-       <meta name="keywords" content="flags,quiz,geography,countries,learning">
-       <title>Country Flags Game</title>
-       <link rel="stylesheet" href="css/bootstrap.min.css">
-       <link rel="stylesheet" href="style-capitals.css" type="text/css">
-       <link rel="stylesheet/less" type="text/css" href="styles.less" />
-       <link href="https://fonts.googleapis.com/css?family=Cabin|Kanit&display=swap" rel="stylesheet">
-    </head>
-    <body onload="$(window).resize()">
-      <div class="container-fluid">
-           <div class="row">
-              <header>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="FLAGS">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="flags,quiz,geography,countries,learning">
+    <title>Country Flags Game</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style-capitals.css" type="text/css">
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Kanit&display=swap" rel="stylesheet">
+</head>
+
+<body onload="$(window).resize()">
+    <div class="container-fluid">
+        <div class="row">
+            <header>
                 <div id="firstTemplate">
-                     <h2 class="titles">WELCOME TO CAPITAL GAME</h2>
-                     <h3 class="titles">Please enter your name</h3>
-                     <h3 id="intro">Geography now ! Do not hesitate ! click the button and check yourself before reck yourself</h3>
-                     <input id="placeName" type="text" required>
-                 <btn class="btn btn-primary" style="outline: none" id="confirm">confirm</btn>
+                    <h2 class="titles">WELCOME TO CAPITAL GAME</h2>
+                    <h3 class="titles">Please enter your name</h3>
+                    <h3 id="intro">Geography now ! Do not hesitate ! click the button and check yourself before reck yourself</h3>
+                    <input id="placeName" type="text" required>
+                    <btn class="btn btn-primary" style="outline: none" id="confirm">confirm</btn>
                 </div>
                 <div id="playerPoints">
-                     <p id="namePlayer">Player:</p>
-                     <p id="points">Points:</p>
+                    <p id="namePlayer">Player:</p>
+                    <p id="points">Points:</p>
                 </div>
-              </header>
-              <div id="background">
-                  <img src="images/capital.jpg" id="capitalPhoto">
-              </div>
-              <section class="col-md-10" id="startQuiz">
-                     <p id="username"></p>
-                     <button id="startGame" style="outline: none"><p>Start quiz</p></button>
-              </section>
-              <section class="col-12 col-xl-10" id="questionsFlag">
-                  <div class="country">
-                      <h3 class="questionText">Cameroon</h3>
-                      <img src="images/cameroon.png" class="flag">
-                  </div>
-                  <div class="country">
-                      <h3 class="questionText">Ecuador</h3>
-                      <img src="images/equador.png" class="flag">
-                  </div>
-                      <div class="country">
-                      <h3 class="questionText">Mongolia</h3>
-                      <img src="images/mongolia.png" class="flag">
-                  </div>
-                      <div class="country">
-                      <h3 class="questionText">Yemen</h3>
-                      <img src="images/yemen.png" class="flag">
-                  </div>
-                     <div class="country">
-                      <h3 class="questionText">Jamaica</h3>
-                      <img src="images/jamaica.png" class="flag">
-                  </div>
-                  <div class="country">
-                      <h3 class="questionText">Kyrgyzstan</h3>
-                      <img src="images/kirgistan.png" class="flag">
-                  </div>
-                   <div class="country">
-                      <h3 class="questionText">Korea North</h3>
-                      <img src="images/koreaN.png" class="flag">
-                  </div>
-                   <div class="country">
-                      <h3 class="questionText">Myanmar</h3>
-                      <img src="images/mjanma.png" class="flag">
-                  </div>
-                   <div class="country">
-                      <h3 class="questionText">North Macedonia</h3>
-                      <img src="images/macedonia.png" class="flag">
-                  </div>
-                   <div class="country">
-                      <h3 class="questionText">Nicaragua</h3>
-                      <img src="images/nicaragua.jpg" class="flag">
-                  </div>
-                   <div class="country">
-                      <h3 class="questionText">Botswana</h3>
-                      <img src="images/botswana.jpg" class="flag">
-                  </div>
-                   <div class="country">
-                      <h3 class="questionText">Bhutan</h3>
-                      <img src="images/bhutan.jpg" class="flag">
-                  </div>
-                    <div class="country">
-                      <h3 class="questionText">Somalia</h3>
-                      <img src="images/somalia.png" class="flag">
-                  </div>
-                    <div class="country">
-                      <h3 class="questionText">Congo</h3>
-                      <img src="images/congo.png" class="flag">
-                  </div>
-                    <div class="country">
-                      <h3 class="questionText">Kazakstan</h3>
-                      <img src="images/kazachstan.png" class="flag">
-                  </div>
-                    <div class="country">
-                      <h3 class="questionText">Tanzania</h3>
-                      <img src="images/tanzania.png" class="flag">
-                  </div>
-                    <div class="country">
-                      <h3 class="questionText">South Korea</h3>
-                      <img src="images/koreaS.png" class="flag">
-                  </div>
-                    <div class="country">
-                      <h3 class="questionText">Sierra Leone</h3>
-                      <img src="images/sierra.png" class="flag">
-                  </div>
-                    <div class="country">
-                      <h3 class="questionText">Azerbaijan</h3>
-                      <img src="images/azer.png" class="flag">
-                  </div>
-                    <div class="country">
-                      <h3 class="questionText">Uruguay</h3>
-                      <img src="images/urugauy.png" class="flag">
-                  </div>
-                    <div class="country">
-                      <h3 class="questionText">Sri Lanka</h3>
-                      <img src="images/srilanka.jpg" class="flag">
-                  </div>
-                    <div class="country">
-                      <h3 class="questionText">Central African Republic</h3>
-                      <img src="images/cra.png" class="flag">
-                  </div>
-                    <div class="country">
-                      <h3 class="questionText">Pakistan</h3>
-                      <img src="images/pakistan.png" class="flag">
-                  </div>
-                   <div class="country">
-                      <h3 class="questionText">Cyprus</h3>
-                      <img src="images/cyprus.jpg" class="flag">
-                  </div>
-                   <div class="country">
-                      <h3 class="questionText">Ethiopia</h3>
-                      <img src="images/ethipia.png" class="flag">
-                  </div>                       
-              </section>
-                <section class="ending">
-                    <div id="information"></div>
-                    <p>Thanks for playing</p>
-                    <p>Do you want play again ?</p><br/><a href="index.html">
-                    <button id="clickEnd"><p>Click!</p></button></a> 
-                </section> 
-                <footer>
-                      <img src="images/geogame.png" width="180px" height="140px" id="imgfooter">
-                </footer> 
-            </div>  
-      </div>
-       <script src="jquery-3.4.0.min.js"></script>
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-       <script src="script-capitals.js"></script> 
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-       <script src="js/bootstrap.min.js"></script>
-       
-    </body>
+            </header>
+            <div id="background">
+                <img src="images/capital.jpg" id="capitalPhoto">
+            </div>
+            <section class="col-md-10" id="startQuiz">
+                <p id="username"></p>
+                <button id="startGame" style="outline: none">
+                    <p>Start quiz</p>
+                </button>
+            </section>
+            <section class="col-12 col-xl-10" id="questionsFlag">
+                <div class="country">
+                    <h3 class="questionText">Cameroon</h3>
+                    <img src="images/cameroon.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Ecuador</h3>
+                    <img src="images/equador.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Mongolia</h3>
+                    <img src="images/mongolia.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Yemen</h3>
+                    <img src="images/yemen.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Jamaica</h3>
+                    <img src="images/jamaica.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Kyrgyzstan</h3>
+                    <img src="images/kirgistan.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Korea North</h3>
+                    <img src="images/koreaN.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Myanmar</h3>
+                    <img src="images/mjanma.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">North Macedonia</h3>
+                    <img src="images/macedonia.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Nicaragua</h3>
+                    <img src="images/nicaragua.jpg" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Botswana</h3>
+                    <img src="images/botswana.jpg" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Bhutan</h3>
+                    <img src="images/bhutan.jpg" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Somalia</h3>
+                    <img src="images/somalia.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Congo</h3>
+                    <img src="images/congo.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Kazakstan</h3>
+                    <img src="images/kazachstan.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Tanzania</h3>
+                    <img src="images/tanzania.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">South Korea</h3>
+                    <img src="images/koreaS.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Sierra Leone</h3>
+                    <img src="images/sierra.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Azerbaijan</h3>
+                    <img src="images/azer.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Uruguay</h3>
+                    <img src="images/urugauy.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Sri Lanka</h3>
+                    <img src="images/srilanka.jpg" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Central African Republic</h3>
+                    <img src="images/cra.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Pakistan</h3>
+                    <img src="images/pakistan.png" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Cyprus</h3>
+                    <img src="images/cyprus.jpg" class="flag">
+                </div>
+                <div class="country">
+                    <h3 class="questionText">Ethiopia</h3>
+                    <img src="images/ethipia.png" class="flag">
+                </div>
+            </section>
+            <section class="ending">
+                <div id="information"></div>
+                <p>Thanks for playing</p>
+                <p>Do you want play again ?</p><br /><a href="index.html">
+                    <button id="clickEnd">
+                        <p>Click!</p>
+                    </button></a>
+            </section>
+            <footer>
+                <img src="images/geogame.png" width="180px" height="140px" id="imgfooter">
+            </footer>
+        </div>
+    </div>
+    <script src="jquery-3.4.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script-capitals.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
